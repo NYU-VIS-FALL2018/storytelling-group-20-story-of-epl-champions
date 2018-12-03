@@ -3,7 +3,7 @@
 
 Group 20
 
-![Project-Cover](screenshot.jpg)
+![Project-Cover](https://github.com/NYU-VIS-FALL2018/storytelling-group-20-story-of-epl-champions/blob/master/resources/leicester.jpg)
 
 
 ## About
