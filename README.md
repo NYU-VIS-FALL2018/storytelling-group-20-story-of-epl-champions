@@ -21,4 +21,4 @@ we also want to determine which was the most dominant EPL team in the given tenu
 ## More
 [DEMO](https://nyu-vis-fall2018.github.io/project-template/)
 
-[Project Descrioption](https://github.com/NYU-VIS-FALL2018/storytelling-group-20-story-of-epl-champions/blob/master/resources/Group_20_Project_Description.pdf)
+[Project Description](https://github.com/NYU-VIS-FALL2018/storytelling-group-20-story-of-epl-champions/blob/master/resources/Group_20_Project_Description.pdf)
