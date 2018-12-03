@@ -3,7 +3,7 @@
 
 Group 20
 
-![Screenhot](screenshot.jpg)
+![Project-Cover](screenshot.jpg)
 
 
 ## About
