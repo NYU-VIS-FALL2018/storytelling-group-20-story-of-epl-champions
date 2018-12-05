@@ -19,6 +19,6 @@ given EPL season and which were promoted to EPL from Division 1 for the next sea
 we also want to determine which was the most dominant EPL team in the given tenure.
 
 ## More
-[DEMO](https://akshaytambe.github.io/EPL-InfoViz/)
+[DEMO](https://nyu-vis-fall2018.github.io/storytelling-group-20-story-of-epl-champions/)
 
 [Project Description](https://github.com/NYU-VIS-FALL2018/storytelling-group-20-story-of-epl-champions/blob/master/resources/Group_20_Project_Description.pdf)
