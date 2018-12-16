@@ -85,7 +85,12 @@
 		var chart = c3.generate({
 		bindto: '#chart',
 		data: {
-			columns: cols
+			columns: cols,
+			color: function (color, d) {
+            
+				
+				return color;
+			}
 		},
 		legend: {
 			position: 'right'
@@ -150,6 +155,8 @@
 	<header>
 		<br/><br/><br/><br/><br/><br/><br/><br/>
 		<h1 style="font-size:40px;">Leicester City's Road to Glory to EPL Triumph</h1>
+		<br/><br/>
+		<h1 style="font-size:20px;">Up and downs since the last decade, the Foxes beat 5,000-to-1 odds to win the Premier League title.</h1>
 	</header>
 
 	<section class="cd-timeline js-cd-timeline">
@@ -163,7 +170,7 @@
 					<h2>Rise and Fall from the Premier league</h2>
 					<br/>
 					<img src="img/leicester_1.jpg" alt="Leicester Won Division 1 Championship">
-					<p>Adams guided Leicester to the runners-up spot in Division One and automatic promotion back
+					<p align="justify">Adams guided Leicester to the runners-up spot in Division One and automatic promotion back
 						to the Premier League with more than 90 points. However, Leicester lasted only one season in
 						the top flight and was relegated to the newly labeled Championship, previously known as
 						Division One.</p>
@@ -180,7 +187,7 @@
 					<h2>A Rough Patch</h2>
 					<br/>
 					<img src="img/leicester_2.jpg" alt="A Rough Patch">
-					<p>Adams resigned as manager and Craig Levein was appointed as the boss who proved
+					<p align="justify">Adams resigned as manager and Craig Levein was appointed as the boss who proved
 						to be an unsuccessful while his 15 months tenure before being replaced by assistant manager
 						Rob Kelly as the new manager.</p>
 					<span class="cd-timeline__date">Season 2003-04 & 2004-05</span>
@@ -196,7 +203,7 @@
 					<h2>Further Downfall to the third tier</h2>
 					<br/>
 					<img src="img/leicester_3.jpg" alt="Ian Holloway was appointed the manager">
-					<p>On 22 November 2006, Ian Holloway was appointed the manager, and he became the first Leicester
+					<p align="justify">On 22 November 2006, Ian Holloway was appointed the manager, and he became the first Leicester
 						manager in over 50 years to win his first league match in charge, beating Bristol City 2-0.
 						However, this success did not last, and Leicester was relegated from the Championship at the
 						end of the 2007-08 season. Holloway left by mutual consent after less than a season at the
@@ -214,7 +221,7 @@
 					<h2>Back in Action to Division 1 Championship</h2>
 					<br/>
 					<img src="img/leicester_4.jpg" alt="Leicester Won League 1 Championship">
-					<p>The 2008-09 campaign was Leicester's first season outside the top two levels of English
+					<p align="justify">The 2008-09 campaign was Leicester's first season outside the top two levels of English
 						football. Following relegation to the third tier the previous season, Leicester returned to the
 						Championship at the first attempt in 2008-09, finishing as champions of League One after a
 						2-0 win at Southend United, with two matches in hand on 18 April 2009.</p>
@@ -231,7 +238,7 @@
 					<h2>Struggling to bring magic back</h2>
 					<br/>
 					<img src="img/leicester_5.jpg" alt="Struggling to bring magic back">
-					<p>Leicester's first season back in the Championship was again a successful one under the stewardship of Pearson 
+					<p align="justify">Leicester's first season back in the Championship was again a successful one under the stewardship of Pearson 
 						as the Foxes finished fifth in their first season back in the second tier in 2009-10. Pearson was replaced by Paulo Sousa, 
 						who was sacked after just nine league games after a poor start. Sven-Göran Eriksson was announced as his replacement as 
 						he guided the club to an eventual tenth-place finish in 2010-11.
@@ -249,7 +256,7 @@
 					<h2>Rising back to the premier league in 2014 after a ten-year absence</h2>
 					<br/>
 					<img src="img/leicester_6.jpg" alt="Rising back to the premier league in 2014 after a ten-year absence">
-					<p>Leicester were favourites for promotion in the 2011–12 season, but on 24 October 2011, following an 
+					<p align="justify">Leicester were favourites for promotion in the 2011–12 season, but on 24 October 2011, following an 
 						inconsistent start with the Foxes winning just 5 out of the first 13 games, Eriksson left the club by mutual consent who was replaced by
 						Nigel Pearson. In the 2012–13 season, Leicester struggled with play-off heartbreak as Anthony Knockaert had a 97th-minute penalty saved and 
 						Troy Deeney scored immediately at the other end. After an extremely successful 2013–14 season, Leicester finished first in the Championship 
@@ -268,7 +275,7 @@
 						<h2>Survival of the Fittest</h2>
 						<br/>
 						<img src="img/leicester_7.jpg" alt="Survival of the Fittest">
-						<p>Following a miraculous run of seven wins from our final nine games in season 2014-15, City completed the
+						<p align="justify">Following a miraculous run of seven wins from our final nine games in season 2014-15, City completed the
 							greatest escape ever witnessed in the Premier League with a game to spare 
 							to ensure survival before Pearson was sensationally sacked following a disastrous pre-season trip to Thailand.</p>
 						<span class="cd-timeline__date">Season 2014-15</span>
@@ -284,7 +291,7 @@
 						<h2>A New Manager Again!</h2>
 						<br/>
 						<img src="img/leicester_8.jpg" alt="Claudio Ranieri">
-						<p>Despite Pearson's success, he was sacked in June 2015 after a 
+						<p align="justify">Despite Pearson's success, he was sacked in June 2015 after a 
 							breakdown in his relationship with the club's owners. He was replaced by former Chelsea manager Claudio Ranieri.
 							Starting the 2015–16 season as relegation candidates, and quoted by William Hill at 5,000–1.
 						</p>
@@ -345,19 +352,26 @@
 	<div id="chart"></div>
 	<div style="width: 100%; overflow: hidden;">
 			<div id="chart2" style="width: 900px; float: left;"></div>
-			<div style="margin-left: 620px;">
+			<div style="margin-left: 620px; margin-right: 50px;">
 				<br/><br/><br/><br/>
 				<p align="center" style="font-size:30px; font-weight: bold; color: black;">Season Facts - Do you know?</p>
-				<br/><br/><br/><br/>
-				<ul style="font-size:20px; color: grey;">
-					<li>Leicester became the first first-time winners of the top-flight since Nottingham Forest in 1977/78.</li>
+				<br/><br/>
+				<br/>
+				<ul style="font-size:20px; color: #424242;">
+					<li>• Leicester became the first first-time winners of the top-flight since Nottingham Forest in 1977/78.</li>
 					<br/>
-					<li>Leicester lost just 1 Away Game and 2 Home Games in the entire season.</li>
+					<li>• Leicester lost just 1 Away Game and 2 Home Games in the entire season.</li>
 					<br/>
-					<li>Leicester were the second highest goal scorers in Season 2015-16, after Manchester City.</li>
+					<li>• Leicester were the second highest goal scorers in Season 2015-16, after Manchester City.</li>
 				</ul>
-				<br/><br/><br/><br/>
-				<p align="left" style="font-size:20px; color: grey;">
+				<br/><br/>
+				<p align="justify" style="font-size:20px; color: #424242;">
+					For casual soccer fans, it may be difficult to fully understand the absurdity of Leicester City 
+					winning England’s Premier League title. To say it is an upset or a shock or a stunner seems wholly inadequate, 
+					particularly when one considers that those words are so often used to describe one-time results (the United States 
+					over the Soviet Union in the 1980 Olympic hockey tournament, for example) as opposed to the feat of endurance 
+					that is required for a relative minnow like Leicester to dominate the sharks of English soccer for a nine-month season.
+					<br/><br/>
 					Want to check how other teams performed in Season 2015-16, check our "EPL Goal Score Tracker".
 				</p>
 			</div>
@@ -808,15 +822,15 @@
 	,"Chelsea"
 	,"Crystal Palace"
 	,"Everton"
-	,"Leicester City"
+	,"Stoke City"
 	,"Liverpool"
 	,"Manchester City"
 	,"Manchester Utd"
 	,"Newcastle Utd"
 	,"Norwich City"
 	,"Southampton"
-	,"Stoke City"
 	,"Sunderland"
+	,"Leicester City"
 	,"Swansea City"
 	,"Tottenham"
 	,"Watford"
